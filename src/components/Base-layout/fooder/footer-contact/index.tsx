@@ -2,29 +2,31 @@ import {Image} from '../footer-follow/style'
 import Whatsapp from '../../../../assets/img/whatsapp.png'
 import Telefone from '../../../../assets/img/telefone.png'
 import Email from '../../../../assets/img/email.png'
+//import styled components 
+import { Title,InfoText } from '../../../../assets/global-style/styled'
 
 export default function FooterContact() {
     return (
         <div>
-            <h1>Entre em Contato:</h1>
+            <Title>Entre em Contato:</Title>
             <a href="">
                 <div style={{display: 'flex', alignItems: 'center'}}>
                 <Image src={Whatsapp} alt="whatsapp" />
-                <span>Envie um WhatsApp</span>
+                <InfoText>Envie um WhatsApp</InfoText>
                 </div>  
                
             </a>
             <a href="">
                 <div style={{display: 'flex', alignItems: 'center'}}>
                 <Image src={Telefone} alt="whatsapp" />
-                <span>(16) 3403-4383</span>
+                <InfoText>(16) 3403-4383</InfoText>
                 </div>     
                
             </a>
             <a href="">
                 <div style={{display: 'flex', alignItems: 'center'}}>
                 <Image src={Email} alt="whatsapp" />
-                <span>pibfranca@gmail.com</span>
+                <InfoText>pibfranca@gmail.com</InfoText>
                 </div>     
                
             </a>

@@ -5,17 +5,18 @@ import Spotyfi from '../../../../assets/img/spotify.png'
 import GooglePlay from '../../../../assets/img/google-play.png'
 //import styled components
 import { Image } from './style'
+import { Title } from '../../../../assets/global-style/styled'
 
 
 export default function FooterFollow() {
     return(
         <div>
-            <h1>Siga-nos:</h1>
+            <Title>Siga-nos:</Title>
             <div>
                 <a href="https://www.facebook.com/pib.franca" target="_blank" rel="noreferrer">
                     <Image src={Facebook} alt="facebook"/>
                 </a>
-                <a href="https://www.instagram.com/ibpovo" target="_blank" rel="noreferrer">
+                <a href="https://www.instagram.com/pibfranca/" target="_blank" rel="noreferrer">
                     <Image src={Instagram} alt="instagram"/>
                 </a>
                 <a href="https://open.spotify.com/show/2ZmI5xCVE5lx1jEulpICiU" target="_blank" rel="noreferrer">

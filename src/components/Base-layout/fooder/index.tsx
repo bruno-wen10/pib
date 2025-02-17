@@ -27,7 +27,8 @@ export default function Footer() {
              </div> 
                    
         </FooterSection>
-        
+
+        <h6 style={{marginTop:'5px'}}>© Primeira Igreja Batista em Franca ® 2025. TODOS OS DIREITOS RESERVADOS.</h6>        
          
        </FooterContainer>
     )
