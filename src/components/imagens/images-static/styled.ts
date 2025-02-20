@@ -40,7 +40,7 @@ export const Content = styled.div`
     fonte-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    padding: 20px;
-    
+    padding: 20px;    
     z-index: 1;
+    
 `;

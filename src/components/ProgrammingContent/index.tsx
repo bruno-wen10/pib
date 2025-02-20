@@ -7,7 +7,7 @@ interface PropsProgramming {
 }
 
 export default function ProgrammingContent({
-  optionChosen,
+  //optionChosen,
   setOptionChosen,
 }: PropsProgramming) {
   const navigate = useNavigate();

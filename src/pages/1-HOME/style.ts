@@ -15,6 +15,7 @@ export const AcontecePib = styled.h1`
     font-size: 2.5rem;
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
      margin-bottom: 30px;
       @media (max-width: 768px) {
     font-size: 1.5rem;
@@ -28,7 +29,7 @@ export const BackgroundColorDiv = styled.div`
     padding-left: 20px;  
     display: flex;
     gap: 50px;
-    height: 55vh;
+    height: 60vh;
     
 
     @media (max-width: 768px) {
@@ -44,7 +45,8 @@ export const EventContener = styled.div`
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     
+     margin: 35px 0;    
+      transition: transform 0.8s ease-in-out;
 
      & hover {
         transform: scale(1.1);

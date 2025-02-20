@@ -9,13 +9,17 @@ import AgendaWeek from "../pages/11-agendas";
 import WorshipTime from "../pages/10-worship-time";
 import ItHappens from "../pages/12-it-happens";
 import EveryoneEvents from "../pages/13-everyone-events";
+import { EventsProvider } from "../service/context";
 
 export default function Router() {
   return (
+    <EventsProvider>
+
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<BaseLayout />}>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          
           <Route path="/PIB" element={<PIB />} />
           <Route path="/ministerios" element={<Ministerios />}/>
           <Route path="/agenda-semanal" element={<AgendaWeek />} />
@@ -25,5 +29,6 @@ export default function Router() {
         </Route>
       </Routes>
     </BrowserRouter>
+  </EventsProvider>
   );
 }

@@ -15,12 +15,12 @@ import { EventItem, EventsProps } from '../../types/type-events/index'
 
 export default function Events({onEventClick}:EventsProps) {
     const EventsPib: EventItem[] = [
-        { image: SextouPib, name: 'Sextou PIB',title: 'Sextou PIB', data: "Todas Sextas-Feiras" },
-        { image: Idem, name: 'Idem', title: 'IDEM', data: "25/02/2023 - 27/02/2023" },
-        { image: SextouPib, name: 'Sextou PIB', title: 'Sextou PIB', data: "Todas Sextas-Feiras" },
-        { image: Idem, name: 'Idem',title: 'IDEM PIB', data: "25/02/2023 - 27/02/2023" },
-        { image: SextouPib, name: 'Sextou PIB',title: 'Sextou PIB', data: "Todas Sextas-Feiras" },
-        { image: Idem, name: 'Idem',title: 'IDEM PIB', data: "25/02/2023 - 27/02/2023" }
+        {id:1, image: SextouPib, name: 'Sextou PIB',title: 'Sextou PIB', data: "Todas Sextas-Feiras" },
+        {id:2, image: Idem, name: 'Idem', title: 'IDEM', data: "25/02/2023 - 27/02/2023" },
+        {id:3, image: SextouPib, name: 'Sextou PIB', title: 'Sextou PIB', data: "Todas Sextas-Feiras" },
+        {id:4, image: Idem, name: 'Idem',title: 'IDEM PIB', data: "25/02/2023 - 27/02/2023" },
+        {id:5, image: SextouPib, name: 'Sextou PIB',title: 'Sextou PIB', data: "Todas Sextas-Feiras" },
+        {id:6, image: Idem, name: 'Idem',title: 'IDEM PIB', data: "25/02/2023 - 27/02/2023" }
     ]
     const [currentIndex, setCurrentIndex] = useState(0);
     const [slideIn, setSlideIn] = useState(true);

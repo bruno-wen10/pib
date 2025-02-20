@@ -8,6 +8,11 @@ export const  ContainerEvent = styled.div`
   width: 100wh;
   height: 85vh; /* Ocupa toda a altura da tela */
   background-color: #ECEFF4;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 export const ContainerIformation = styled.div`

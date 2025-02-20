@@ -14,7 +14,7 @@ export default function Hearder() {
   return (
     <BaseLayoutContainer>
       
-      <Link to={"/home"}>
+      <Link to={"/"}>
       <Logo src={logo} alt="Logo da Igreja" />
       </Link>
 
@@ -23,7 +23,7 @@ export default function Hearder() {
       </MenuIcon>
 
       <Nav isOpen={menuOpen}>
-        <StyledLink  to={"/home"} >Home</StyledLink >
+        <StyledLink  to={"/"} >Home</StyledLink >
         <StyledLink  to={"/PIB"} >PIB</StyledLink >
         <StyledLink  to={"/ministerios"}>Ministérios</StyledLink >
         <StyledLink  to={"/mensagens"}>Contribua</StyledLink >        

@@ -16,7 +16,7 @@ export const ButtonGeneral = styled.button`
 
     &:hover {
         background-color: #E3B505 ; /* Muda a cor de fundo para azul ao passar o mouse */
-        color: #3A3437 ; /* Muda a cor do texto para branco ao passar o mouse */
+        color: #131E5B ; /* Muda a cor do texto para branco ao passar o mouse */
         border: 5px solid  #E3B505 ;
     }
 
