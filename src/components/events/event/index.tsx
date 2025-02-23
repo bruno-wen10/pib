@@ -9,7 +9,7 @@ import { EventItem } from "../../../types/type-events/index"
 
 
 
-export default function SelectedEvent({image, name, data, title, description}: EventItem) {
+export default function SelectedEvent({id, image, name, data, title, description}: EventItem) {
     return (
         <ContainerEvent>
              

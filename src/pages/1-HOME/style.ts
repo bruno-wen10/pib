@@ -40,7 +40,9 @@ export const BackgroundColorDiv = styled.div`
       }
        
 `
-export const EventContener = styled.div`    
+
+export const EventContener = styled.div` 
+    
      font-family: 'Poppins', sans-serif;
      display: flex;
      flex-wrap: wrap;
@@ -61,12 +63,29 @@ export const EventContener = styled.div`
   }
        
 `
+
+export const BackdrodLive = styled.section<{ backgroundImage: string }>`
+    background-image: url(${(props) => props.backgroundImage});
+     background-size: contain; /* Ajuste o tamanho da imagem de fundo */
+    background-position: center;
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-color: #47B5E4 ;
+    font-family: 'Poppins', sans-serif;
+       
+    height: 100vh;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    
+      }
+`
 export const AssistaAoVivo = styled.h1`
     color: #131E5B ;
     font-size: 3rem;
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin: 20px 0;
+    
 `;
 

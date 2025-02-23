@@ -34,10 +34,11 @@ export default function EventsEveryone() {
                     
                         <Container reverse={index % 2 !== 0}>
                             <ImagemEvent src={event.image} alt={event.name} />
-                            <div>
+                            <div style={{flex: 1, padding: '20px'}}>
                                 <h2>{event.name}</h2>
                                 <p>{event.title}</p>
                                 <p>{event.data}</p>
+                                <p style={{whiteSpace: 'pre-line'}}>{event.description}</p>
                                 <ButtonGeneral onClick={() => handleEventClick(event)}>VER MAIS</ButtonGeneral>
                             </div>
                         </Container>

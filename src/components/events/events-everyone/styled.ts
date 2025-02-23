@@ -66,7 +66,7 @@ export const LoadMoreButton = styled.button`
 export const TitleEvent = styled.h1`
     
     margin-bottom: 10px;
-    color: #ECEFF4;
+    color: #CEDAEC   ;
      font-size: 3rem;
     font-weight: 50;
     font-family: 'Poppins', sans-serif;

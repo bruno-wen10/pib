@@ -5,8 +5,9 @@ import ProgrammingContent from "../../components/ProgrammingContent";
 import Events from "../../components/events";
 //import images
 import Louvor from "../../assets/img/images-photos/louvor.jpg";
+import WatchLive from '../../assets/img/Assista-ao-vivo.png'
 //import styled components
-import { H1, BackgroundColorDiv, AcontecePib, EventContener, AssistaAoVivo } from "./style";
+import { H1, BackgroundColorDiv, AcontecePib, EventContener, AssistaAoVivo, BackdrodLive } from "./style";
 import { ButtonGeneral } from "../../components/buttons/button/style";
 //import react
 import { useState } from "react";
@@ -40,6 +41,7 @@ export default function Home() {
         />
       </BackgroundSection>
       <BackgroundColorDiv>
+        
         <div style={{ paddingBottom: "20px" }}>
           <AcontecePib>ACONTECE PIB</AcontecePib>
           <ButtonGeneral onClick={() => accessEveryoneEvents()}>
@@ -52,11 +54,11 @@ export default function Home() {
         </EventContener>
         
       </BackgroundColorDiv>
-      <div>
+      <BackdrodLive backgroundImage={WatchLive}>
           <AssistaAoVivo>ASSISTA AO VIVO</AssistaAoVivo>
-          <VideoBackgaund />
+          <VideoBackgaund videoUrl={""} />
           
-        </div>
+        </BackdrodLive>
     </div>
   );
 }

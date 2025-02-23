@@ -13,11 +13,12 @@ export default function ItHappens() {
 
   return (
     <SelectedEvent
+      id={0}
       image={event.image}
       name={event.name}
       data={event.data}
       title={event.title}
-      description={event.description}
-    />
+      description={event.description} 
+       />
   );
 }

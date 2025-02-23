@@ -1,13 +1,24 @@
 
 
+type VideoBackgaundProps = {
+    videoUrl: string
+}
 
-
-export default function VideoBackgaund() {
+export default function VideoBackgaund({videoUrl}: VideoBackgaundProps) {
     return (
         <div>
-            <video autoPlay loop muted>
-                <source src="path/to/your/video.mp4" type="video/mp4" />
-            </video>
+            <iframe 
+            width={"50%"}
+            height={"50%"}
+            src={videoUrl}
+            title="YouTube video player"
+            frameBorder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            >
+            
+               
+            </iframe>
         </div>
     )
 }
