@@ -1,15 +1,32 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 
 
-export const H1 = styled.h1`
+// Definindo a animação
+const slideUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(150%);
+
+  }
+  to {
+    opacity: 5;
+    transform: translateY(0%);
+  }
+`;
+
+export const H1 = styled.h1<{ isVisible: boolean }>`
     color: #fff;
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 200;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     margin: 20px 0;
+    padding-bottom: 50px;
+    animation: ${({ isVisible }) => (isVisible ? slideUp : 'none')} 1s ease-in-out;
 `;
+
+
 export const AcontecePib = styled.h1`
     color: #3A3437;
     font-size: 2.5rem;
@@ -23,23 +40,22 @@ export const AcontecePib = styled.h1`
   }
 `
 
-export const BackgroundColorDiv = styled.div`
-    background-color: #ECEFF4 ;    
+export const BackgroundColorDiv = styled.div<{ isVisible: boolean }>`
+    background-color: #ECEFF4;
     font-family: 'Poppins', sans-serif;
-    padding-left: 20px;  
+    padding-left: 20px;
     display: flex;
     gap: 50px;
     height: 60vh;
-    
+    animation: ${({ isVisible }) => (isVisible ? slideUp : 'none')} 1s ease-in-out;
 
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
         height: auto;
-    
-      }
-       
-`
+    }
+`;
+
 
 export const EventContener = styled.div` 
     

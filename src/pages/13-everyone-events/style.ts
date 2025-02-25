@@ -22,4 +22,5 @@ export const ContentContainer = styled.div`
   z-index: 1; /* Garante que o conteúdo fique acima do background */
   padding: 20px;
   color: #000; /* Ajuste a cor do texto conforme necessário */
+  padding: 30px;
 `;

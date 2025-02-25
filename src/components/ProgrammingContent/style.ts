@@ -1,13 +1,25 @@
 import styled, { keyframes } from 'styled-components';
 
 const slideUp = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+   from {
+    opacity:0;
+    transform: translateY(200%);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 10;
+    transform: translateY();
+  }
+`;
+
+export const ButtonContainer = styled.div<{ isVisible: boolean }>`
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    animation: ${({ isVisible }) => (isVisible ? slideUp : 'none')} 1s ease-in-out;
+
+    @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -43,13 +55,3 @@ export const CultItem = styled.div<{ delay: number }>`
   }
 `;
 
-export const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-  }
-`;

@@ -1,5 +1,9 @@
+//import React
 import { useNavigate } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
+//import components
 import Button from '../buttons/button';
+import { ButtonContainer } from './style';
 
 interface PropsProgramming {
   optionChosen: 'cult' | 'agenda' | null;
@@ -11,6 +15,10 @@ export default function ProgrammingContent({
   setOptionChosen,
 }: PropsProgramming) {
   const navigate = useNavigate();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   const handleButtonClick = (option: 'cult' | 'agenda') => {
     setOptionChosen(option);
@@ -23,10 +31,10 @@ export default function ProgrammingContent({
 
   return (
     <>
-      <div style={{ display: 'flex', justifyContent: 'space-around', gap: '20px' }}>
+      <ButtonContainer ref={ref} isVisible={inView} >
         <Button onClick={() => handleButtonClick('agenda')}>Agenda Semanal</Button>
         <Button onClick={() => handleButtonClick('cult')}>Horário dos cultos</Button>
-      </div>
+      </ButtonContainer>
     </>
   );
 }

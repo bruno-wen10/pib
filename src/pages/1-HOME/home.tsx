@@ -12,6 +12,7 @@ import { ButtonGeneral } from "../../components/buttons/button/style";
 //import react
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 //import types
 import { EventItem } from "../../types/type-events/index";
 import VideoBackgaund from "../../components/videos-components/video-backgaund";
@@ -21,6 +22,14 @@ type ChoiceOption = "cult" | "agenda";
 
 export default function Home() {
   const [optionChosen, setOptionChosen] = useState<ChoiceOption | null>(null);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+  const { ref: refBackgroundColorDiv, inView: inViewBackgroundColorDiv } = useInView({
+    triggerOnce: true,
+    threshold: 0,
+  });
 
   const navigate = useNavigate();
   const accessEveryoneEvents = ()=>{
@@ -34,13 +43,13 @@ export default function Home() {
     <div>
       <HomeImages />
       <BackgroundSection imageUrl={Louvor}>
-        <H1>Confira nossa Programação!</H1>
+      <H1 ref={ref} isVisible={inView}>Confira nossa Programação!</H1>
         <ProgrammingContent
           optionChosen={optionChosen}
           setOptionChosen={setOptionChosen}
         />
       </BackgroundSection>
-      <BackgroundColorDiv>
+      <BackgroundColorDiv ref={refBackgroundColorDiv} isVisible={inViewBackgroundColorDiv} >
         
         <div style={{ paddingBottom: "20px" }}>
           <AcontecePib>ACONTECE PIB</AcontecePib>
