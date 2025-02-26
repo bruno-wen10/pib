@@ -10,11 +10,12 @@ export const BackgroundContainer = styled.div`
   overflow: hidden;
 `;
 
-export const BackgroundVideo = styled.video`
+export const BackgroundVideo = styled.video<{ filterBlue: string  }>`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(50px); 
+  z-index: -1;
+  filter: blur(${({ filterBlue }) => filterBlue});
 `;
 
 export const ContentContainer = styled.div`

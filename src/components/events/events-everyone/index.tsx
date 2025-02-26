@@ -36,7 +36,8 @@ export default function EventsEveryone() {
                             <ImagemEvent src={event.image} alt={event.name} />
                             <div style={{flex: 1, padding: '20px'}}>
                                 <h2>{event.name}</h2>
-                                <p>{event.title}</p>
+                                <strong>{event.title}</strong>   
+                                
                                 <p>{event.data}</p>
                                 <p style={{whiteSpace: 'pre-line'}}>{event.description}</p>
                                 <ButtonGeneral onClick={() => handleEventClick(event)}>VER MAIS</ButtonGeneral>

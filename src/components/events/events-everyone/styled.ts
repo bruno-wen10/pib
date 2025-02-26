@@ -29,6 +29,14 @@ export const Container = styled.div<{ reverse?: boolean }>`
         border-color: #E3B505;
         box-shadow: 0 4px 6px #E3B505;
         transform: scale(1.04);
+        background-color: #ECEFF4 ;
+        
+        h2 {
+            color: #131E5B;
+        }
+        p, strong {
+                color: #3A3437  ;
+            }
     }
 
     @media (max-width: 768px) {
