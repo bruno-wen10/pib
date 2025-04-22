@@ -12,7 +12,7 @@ export default function BackgroudVideoPage({
   return (
     
       <BackgroundContainer>
-        <BackgroundVideo autoPlay loop muted>
+        <BackgroundVideo filterBlue="10px" autoPlay loop muted>
           <source src={videoUrl} type="video/mp4" />
         </BackgroundVideo>
       </BackgroundContainer>

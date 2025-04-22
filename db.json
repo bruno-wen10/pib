@@ -1,0 +1,232 @@
+{
+  "cultDays":[
+    {
+      "id": 1,
+      "day": "Domingo",
+      "times": ["9h | 19h"],
+      "description": "Culto de Adoração e Celebração",
+      "extra": { "time": "10h", "description": "EBD" }
+    },
+    {
+      "id": 2,
+      "day": "Quarta-Feira",
+      "times": ["20h"],
+      "description": "Culto de Oração"
+    },
+    {
+      "id": 3,
+      "day": "Sábado",
+      "times": ["20h"],
+      "description": "Estação Jovem e Teens PIB",
+      "extra": "Realizado de quinze em quinze dias, intercalados."
+    }
+  ],
+    "scheduleWeek": [
+      {
+        "id": "1",
+        "day": "Segunda-Feira",
+        "programming": [
+          {
+            "time": "19h30",
+            "description": "Viva Mais| Presencial",
+            "observation": "Para maiores informações, entre em contato com a liderança doMinisterio.",
+            "imageMinisterio": "Viva Mais"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "day": "Terça-Feira",
+        "programming": [
+          {
+            "time": "19h00",
+            "description": "Musicalização | Presencial "
+          },
+          {
+            "time": "20h00",
+            "description": "Discipulado 1.0 (Pr. Claudinei) | Presencial ",
+            "observation": "Faça sua inscrição Para participar."
+          }         
+        ]
+      },
+      {
+        "id": "3",
+        "day": "Quarta-Feira",
+        "programming": [
+          {
+            "time": "20h00",
+            "description": "Culto | Presencial e Online"
+          }
+        ],
+        "extra": [
+          {
+            "time": "20h00",
+            "description": "Berçário | 0 a 2 anos",
+            "observation": "Para maiores informações, entre em contato com a liderança do ministério.",
+            "imageMinisterio": "Keds"
+          },
+          {
+            "time": "20h00",
+            "description": "First Look | 3 a 5 anos",
+            "observation": "Para maiores informações, entre em contato com a liderança do ministério.",
+            "imageMinisterio": "Keds"
+          },
+          {
+            "time": "20h00",
+            "description": "252 | 6 a 10 anos ",
+            "observation": "Para maiores informações, entre em contato com a liderança doMinisterio.",
+            "imageMinisterio": "Keds"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "day": "Quinta-Feira",
+        "programming": [
+          {
+            "time": "20h00",
+            "description": "Discipulado 1.0 (Pr. Claudinei) | Presencial ",
+            "observation": "Faça sua inscrição para participar.",
+            "imageMinisterio": "Discipulado"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "day": "Sexta-Feira",
+        "programming": [
+          {
+            "time": "20h00",
+            "description": "Pequeno Grupos nos Lares | Presencial ",
+            "observation": "Procure a lideraça do PG para maiores informações e participar."
+          }         
+        ]
+      },
+      {
+        "id": "6",
+        "day": "Sábado",
+        "programming": [
+          {
+            "time": "20h00",
+            "description": "Culto Dos Teens | Presencial e Online",
+            "observation": "Realizado de quinze em quinze dias, intercalados.",
+            "imageMinisterio": "Teens"
+          },
+          {
+            "time": "20h00",
+            "description": "Culto Estação Jovem | Presencial e Online",
+            "observation": "Realizado de quinze em quinze dias, intercalados.",
+            "imageMinisterio": "Estação Jovem"
+          }
+        ]        
+      },
+      {
+        "id": "7",
+        "day": "Domingo",
+        "programming": [
+          {
+            "time": "9h00",
+            "description": "Culto | Presencial e Online"
+          },
+          {
+            "time": "10h00",
+            "description": "Escola Bíblica Dominical | Presencial"
+          },
+          {
+            "time": "19h00",
+            "description": "Culto | Presencial e Online"
+          }
+        ],    
+        "extra": [
+          {
+            "time": "19h00",
+            "description": "Berçário | 0 a 2 anos",
+            "observation": "Para maiores informações, entre em contato com a liderança doMinisterio.",
+            "imageMinisterio": "Keds"
+          },
+          {
+            "time": "19h00",
+            "description": "First Look | 3 a 5 anos",
+            "observation": "Para maiores informações, entre em contato com a liderança doMinisterio.",
+            "imageMinisterio": "Keds"
+          },
+          {
+            "time": "19h00",
+            "description": "252 | 6 a 10 anos ",
+            "observation": "Para maiores informações, entre em contato com a liderança doMinisterio.",
+            "imageMinisterio": "Keds"
+          },
+          {
+            "time": "19h30",
+            "description": "Teens | 11 a 17 anos",
+            "observation": "Para maiores informações, entre em contato com a liderança doMinisterio.",
+            "imageMinisterio": "Keds"
+          }
+        ]
+      }  
+    ],
+    "events": [
+      {
+        "id": "1",
+        "image": "SextouPib",
+        "name": "Sextou PIB",
+        "title": "Sextou PIB",
+        "data": "Todas Sextas-Feiras",
+        "day": "15",
+        "month": "Janeiro",
+        "description": "Comunicação clara e concisa é essencial. Este texto breve transmite informações importantes de forma direta e eficaz para o leitor. Ele pode ajudar a entender o conteúdo complexo e ajudar a tornar a informação acessível e interessante."
+      },
+      {
+        "id": "2",
+        "image": "Idem",
+        "name": "Idem",
+        "title": "IDEM",
+        "data": "25/02/2023 - 27/02/2023",
+        "day": "15",
+        "month": "Janeiro",
+        "description": "Comunicação clara e concisa é essencial. Este texto breve transmite informações importantes de forma direta e eficaz para o leitor. Ele pode ajudar a entender o conteúdo complexo e ajudar a tornar a informação acessível e interessante."
+      },
+      {
+        "id": "3",
+        "image": "SextouPib",
+        "name": "Sextou PIB",
+        "title": "Sextou PIB",
+        "data": "Todas Sextas-Feiras",
+        "day": "15",
+        "month": "Janeiro",
+        "description": "Comunicação clara e concisa é essencial. Este texto breve transmite informações importantes de forma direta e eficaz para o leitor. Ele pode ajudar a entender o conteúdo complexo e ajudar a tornar a informação acessível e interessante."
+      },
+      {
+        "id": "4",
+        "image": "Idem",
+        "name": "Idem",
+        "title": "IDEM PIB",
+        "data": "25/02/2023 - 27/02/2023",
+        "day": "15",
+        "month": "Janeiro",
+        "description": "Comunicação clara e concisa é essencial. Este texto breve transmite informações importantes de forma direta e eficaz para o leitor. Ele pode ajudar a entender o conteúdo complexo e ajudar a tornar a informação acessível e interessante."
+      },
+      {
+        "id": "5",
+        "image": "SextouPib",
+        "name": "Sextou PIB",
+        "title": "Sextou PIB",
+        "data": "Todas Sextas-Feiras",
+        "day": "15",
+        "month": "Janeiro",
+        "description": "Comunicação clara e concisa é essencial. Este texto breve transmite informações importantes de forma direta e eficaz para o leitor. Ele pode ajudar a entender o conteúdo complexo e ajudar a tornar a informação acessível e interessante."
+      },
+      {
+        "id": "6",
+        "image": "Idem",
+        "name": "Idem",
+        "title": "IDEM PIB",
+        "data": "25/02/2023 - 27/02/2023",
+        "day": "15",
+        "month": "Janeiro",
+        "description": "Comunicação clara e concisa é essencial. Este texto breve transmite informações importantes de forma direta e eficaz para o leitor. Ele pode ajudar a entender o conteúdo complexo e ajudar a tornar a informação acessível e interessante."
+      }
+    ]
+}
+  
+  

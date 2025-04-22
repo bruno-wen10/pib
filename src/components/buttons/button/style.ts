@@ -15,9 +15,9 @@ export const ButtonGeneral = styled.button`
     outline: none; /* Remove o contorno */
 
     &:hover {
-        background-color: #E3B505 ; /* Muda a cor de fundo para azul ao passar o mouse */
+        background-color: #81C6E8 ; /* Muda a cor de fundo para azul ao passar o mouse */
         color: #131E5B ; /* Muda a cor do texto para branco ao passar o mouse */
-        border: 5px solid  #E3B505 ;
+        border: 5px solid  #81C6E8 ;
     }
 
     &:focus {

@@ -17,7 +17,7 @@ export const Container = styled.div<{ reverse?: boolean }>`
     align-items: center;
     border: 1px solid #131E5B;
     font-family: 'Poppins', sans-serif;
-    color: #ECEFF4;
+    color: #fff;
     width: 100%;
     height: 50vh;
     margin-bottom: 15px;
@@ -26,9 +26,9 @@ export const Container = styled.div<{ reverse?: boolean }>`
     animation: ${fadeIn} 0.5s ease-in-out;
 
     &:hover {
-        border-color: #E3B505;
-        box-shadow: 0 4px 6px #E3B505;
-        transform: scale(1.04);
+        border-color: #81C6E8;
+        
+        transform: scale(1.03);
         background-color: #ECEFF4 ;
         
         h2 {
@@ -59,20 +59,20 @@ export const LoadMoreButton = styled.button`
     font-size: 16px;
     color: #fff;
     background-color: #131E5B;
-    border: 5px solid #131E5B;
+    border: 5px solid  #131E5B;
     cursor: pointer;
     transition: background-color 0.3s;
 
     &:hover {
-        background-color: #E3B505;
+        background-color:  #81C6E8;
         color: #131E5B;
-        border: 5px solid #E3B505;
+        border: 5px solid  #81C6E8;
     }
 `;
 
 export const TitleEvent = styled.h1`
     margin-bottom: 10px;
-    color: #CEDAEC;
+    color: #ffffff;
     font-size: 3rem;
     font-weight: 50;
     font-family: 'Poppins', sans-serif;

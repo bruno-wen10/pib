@@ -10,25 +10,30 @@ import WorshipTime from "../pages/10-worship-time";
 import ItHappens from "../pages/12-it-happens";
 import EveryoneEvents from "../pages/13-everyone-events";
 import { EventsProvider } from "../service/context";
+import { CultDayProvider } from "../service/context-cult-day/index";
+import { ScheduleWeekProvider } from "../service/context-scheduleWeek";
 
 export default function Router() {
   return (
     <EventsProvider>
+      <CultDayProvider>
+        <ScheduleWeekProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<BaseLayout />}>
+                <Route path="/" element={<Home />} />
 
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<BaseLayout />}>
-          <Route path="/" element={<Home />} />
-          
-          <Route path="/PIB" element={<PIB />} />
-          <Route path="/ministerios" element={<Ministerios />}/>
-          <Route path="/agenda-semanal" element={<AgendaWeek />} />
-          <Route path="/horario-dos-cultos" element={<WorshipTime />} />
-          <Route path="/acontece-pib" element={<ItHappens />} />
-          <Route path="/todos-os-eventos" element={<EveryoneEvents />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  </EventsProvider>
+                <Route path="/PIB" element={<PIB />} />
+                <Route path="/ministerios" element={<Ministerios />} />
+                <Route path="/agenda-semanal" element={<AgendaWeek />} />
+                <Route path="/horario-dos-cultos" element={<WorshipTime />} />
+                <Route path="/acontece-pib" element={<ItHappens />} />
+                <Route path="/todos-os-eventos" element={<EveryoneEvents />} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        </ScheduleWeekProvider>
+      </CultDayProvider>
+    </EventsProvider>
   );
 }

@@ -24,6 +24,8 @@ export const TitleH1 = styled.h1<{ color?: string; fonteSize?: string }>`
     text-align: center;
     animation: ${fadeIn} 1s ease-in-out;
 
+    
+
     @media (max-width: 768px) {
         font-size: 24px;
     }

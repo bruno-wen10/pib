@@ -7,9 +7,7 @@ export default function ItHappens() {
   const location = useLocation();
   const { event } = location.state as { event: EventItem } || {};
 
-  if (!event) {
-    return <div>Nenhum evento selecionado.</div>;
-  }
+  
 
   return (
     <SelectedEvent
