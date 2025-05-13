@@ -58,13 +58,44 @@ export const StyledLink = styled(Link)`
     text-decoration: none;
     }
     `;
+    export const Styledlink2 = styled.div`
+  text-decoration: none;
+  color: #131E5B ;
+  font-size: 1.0rem;  
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  &:hover {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    }
+    `;
+  export const StyledDiv = styled.div`
+  text-decoration: none;
+  color: #131E5B ;
+  font-size: 1.0rem;  
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+  position: relative; /* Adicione esta linha para posicionar o menu suspenso corretamente */
+  &:hover {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    }
+    `;
     export const MenuIcon = styled.div`
     display: none;
     font-size: 1.5rem;
-  cursor: pointer;
-  
+     cursor: pointer; 
 
   @media (max-width: 768px) {
     display: block;
   }
 `;
+export const Wrapper = styled.div`
+  position: relative; ;
+`;
+
